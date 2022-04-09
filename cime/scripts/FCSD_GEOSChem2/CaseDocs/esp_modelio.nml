@@ -1,0 +1,13 @@
+&modelio
+  diri = "/glade/scratch/fritzt/FCSD_GEOSChem2/bld/esp"
+  diro = "/glade/scratch/fritzt/FCSD_GEOSChem2/run"
+  logfile = "esp.log.1917884.chadmin1.ib0.cheyenne.ucar.edu.211212-130342"
+/
+&pio_inparm
+  pio_netcdf_format = ""
+  pio_numiotasks = -99
+  pio_rearranger = -99
+  pio_root = -99
+  pio_stride = -99
+  pio_typename = "nothing"
+/

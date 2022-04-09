@@ -1,0 +1,75 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+st_archive starting
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.1138074.chadmin1.ib0.cheyenne.ucar.edu.211022-184852 to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/cesm.log.1138074.chadmin1.ib0.cheyenne.ucar.edu.211022-184852
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/atm.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/atm.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/cesm.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/lnd.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/lnd.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/ocn.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/ocn.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130 to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/cesm.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/cpl.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130 to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/cpl.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/ice.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/ice.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/cpl.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/cpl.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/rof.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/rof.log.1138869.chadmin1.ib0.cheyenne.ucar.edu.211022-193232.gz
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/atm.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130 to /glade/scratch/fritzt/archive/FCSD_CAMChem/logs/atm.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130
+-------------------------------------------
+Archiving restarts for date date(2015, 4, 1, 0, 0, 0)
+-------------------------------------------
+Archiving restarts for cam (atm)
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.r.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.cam.r.2015-04-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.h0.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.cam.h0.2015-03.nc
+ WARNING: ncdump -v nhfil /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.rs.2015-04-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: nhfil: No such variable
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.rs.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.cam.rs.2015-04-01-00000.nc
+Archiving restarts for clm (lnd)
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.r.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.clm2.r.2015-04-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.h0.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.clm2.h0.2015-03.nc
+ WARNING: ncdump -v locfnh /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.rh0.2015-04-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.rh0.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.clm2.rh0.2015-04-01-00000.nc
+Archiving restarts for cice (ice)
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cice.r.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.cice.r.2015-04-01-00000.nc
+Archiving restarts for docn (ocn)
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.docn.rs1.2015-04-01-00000.bin to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.docn.rs1.2015-04-01-00000.bin
+Archiving restarts for mosart (rof)
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.r.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.mosart.r.2015-04-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.h0.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.mosart.h0.2015-03.nc
+ WARNING: ncdump -v locfnh /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.rh0.2015-04-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.rh0.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.mosart.rh0.2015-04-01-00000.nc
+Archiving restarts for drv (cpl)
+copying file /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cpl.r.2015-04-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rest/2015-04-01-00000/FCSD_CAMChem.cpl.r.2015-04-01-00000.nc
+Archiving restarts for dart (esp)
+Archiving history files for cam (atm)
+copying /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.h0.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/atm/hist/FCSD_CAMChem.cam.h0.2015-03.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.h0.2015-01.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/atm/hist/FCSD_CAMChem.cam.h0.2015-01.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cam.h0.2015-02.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/atm/hist/FCSD_CAMChem.cam.h0.2015-02.nc 
+Archiving history files for clm (lnd)
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.h0.2015-01.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/lnd/hist/FCSD_CAMChem.clm2.h0.2015-01.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.h0.2015-02.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/lnd/hist/FCSD_CAMChem.clm2.h0.2015-02.nc 
+copying /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.clm2.h0.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/lnd/hist/FCSD_CAMChem.clm2.h0.2015-03.nc 
+Archiving history files for cice (ice)
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cice.h.2015-02.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/ice/hist/FCSD_CAMChem.cice.h.2015-02.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cice.h.2015-01.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/ice/hist/FCSD_CAMChem.cice.h.2015-01.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.cice.h.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/ice/hist/FCSD_CAMChem.cice.h.2015-03.nc 
+Archiving history files for docn (ocn)
+Archiving history files for mosart (rof)
+copying /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.h0.2015-03.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rof/hist/FCSD_CAMChem.mosart.h0.2015-03.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.h0.2015-01.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rof/hist/FCSD_CAMChem.mosart.h0.2015-01.nc 
+moving /glade/scratch/fritzt/FCSD_CAMChem/run/FCSD_CAMChem.mosart.h0.2015-02.nc to /glade/scratch/fritzt/archive/FCSD_CAMChem/rof/hist/FCSD_CAMChem.mosart.h0.2015-02.nc 
+Archiving history files for drv (cpl)
+Archiving history files for dart (esp)
+st_archive completed
+resubmitting from st_archive, resubmit=8
+Submitting job 'case.run', resubmit=8
+submit_jobs case.run
+Submit job case.run
+Submitting job script qsub -q regular -l walltime=12:00:00 -A P19010000 -v ARGS_FOR_SCRIPT='--resubmit' .case.run
+Submitted job id is 1140841.chadmin1.ib0.cheyenne.ucar.edu
+Submit job case.st_archive
+Submitting job script qsub -q regular -l walltime=0:20:00 -A P19010000  -W depend=afterok:1140841.chadmin1.ib0.cheyenne.ucar.edu -v ARGS_FOR_SCRIPT='--resubmit' case.st_archive
+Submitted job id is 1140842.chadmin1.ib0.cheyenne.ucar.edu
+Submitted job case.run with id 1140841.chadmin1.ib0.cheyenne.ucar.edu
+Submitted job case.st_archive with id 1140842.chadmin1.ib0.cheyenne.ucar.edu

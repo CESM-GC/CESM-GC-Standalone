@@ -1,0 +1,13 @@
+&modelio
+  diri = "/glade/scratch/fritzt/FCSD_GEOSChem2/bld/cpl"
+  diro = "/glade/scratch/fritzt/FCSD_GEOSChem2/run"
+  logfile = "cpl.log.1917884.chadmin1.ib0.cheyenne.ucar.edu.211212-130342"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 1
+  pio_stride = 36
+  pio_typename = "pnetcdf"
+/

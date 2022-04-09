@@ -1,0 +1,33 @@
+&drydep_inparm
+ drydep_list		= 'ACET', 'ACTA', 'AERI', 'ALD2', 'ASOA1', 'ASOA2', 'ASOA3', 'ASOAN', 'ASOG1', 'ASOG2', 'ASOG3', 'ATOOH', 'BCPI',
+         'BCPO', 'BR2', 'BRCL', 'BRNO3', 'BRSALA', 'BRSALC', 'CH2O', 'CL2', 'CLNO2', 'CLNO3', 'CLO', 'CLOO', 'DST1',
+         'DST2', 'DST3', 'DST4', 'EOH', 'ETHLN', 'ETNO3', 'ETP', 'GLYC', 'GLYX', 'H2O2', 'HAC', 'HBR', 'HC5A',
+         'HCL', 'HCOOH', 'HI', 'HMHP', 'HMML', 'HNO3', 'HOBR', 'HOCL', 'HOI', 'HONIT', 'HPALD1', 'HPALD2', 'HPALD3',
+         'HPALD4', 'HPETHNL', 'I2', 'I2O2', 'I2O3', 'I2O4', 'IBR', 'ICHE', 'ICL', 'ICN', 'ICPDH', 'IDC', 'IDCHP',
+         'IDHDP', 'IDHPE', 'IDN', 'IEPOXA', 'IEPOXB', 'IEPOXD', 'IHN1', 'IHN2', 'IHN3', 'IHN4', 'INDIOL', 'INPB', 'INPD',
+         'IONITA', 'IONO', 'IONO2', 'IPRNO3', 'ISALA', 'ISALC', 'ITCN', 'ITHN', 'LIMO', 'LVOC', 'LVOCOA', 'MACR', 'MACR1OOH',
+         'MAP', 'MCRDH', 'MCRENOL', 'MCRHN', 'MCRHNB', 'MCRHP', 'MENO3', 'MGLY', 'MOH', 'MONITA', 'MONITS', 'MONITU', 'MPAN',
+         'MSA', 'MTPA', 'MTPO', 'MVK', 'MVKDH', 'MVKHC', 'MVKHCB', 'MVKHP', 'MVKN', 'MVKPC', 'N2O5', 'NH3', 'NH4',
+         'NIT', 'NITS', 'NO2', 'NPRNO3', 'O3', 'OCPI', 'OCPO', 'PAN', 'PFE', 'PP', 'PPN', 'PROPNN', 'PRPN',
+         'PYAC', 'R4N2', 'R4P', 'RA3P', 'RB3P', 'RIPA', 'RIPB', 'RIPC', 'RIPD', 'RP', 'SALA', 'SALAAL', 'SALACL',
+         'SALC', 'SALCAL', 'SALCCL', 'SO2', 'SO4', 'SO4S', 'SOAGX', 'SOAIE', 'TSOA0', 'TSOA1', 'TSOA2', 'TSOA3', 'TSOG0',
+         'TSOG1', 'TSOG2', 'TSOG3'
+ drydep_method		= 'xactive_lnd'
+/
+&megan_emis_nl
+ megan_factors_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_78pft_c20161108.nc'
+ megan_mapped_emisfctrs		= .false.
+ megan_specifier		= 'ISOP = isoprene', 'MOH = methanol', 'EOH = ethanol',
+         'CH2O = formaldehyde', 'ALD2 = acetaldehyde', 'ACTA = acetic_acid',
+         'ACET = acetone', 'HCOOH = formic_acid', 'HCN = hydrogen_cyanide',
+         'CO = carbon_monoxide', 'C2H6 = ethane', 'C2H4 = ethene',
+         'C3H8 = propane', 'ALK4 = pentane + hexane + heptane + tricyclene', 'PRPE = propene + butene',
+         'TOLU = toluene', 'LIMO = limonene', 'MTPA = pinene_a + pinene_b + sabinene + carene_3',
+         'MTPO = terpinene_g + terpinene_a + terpinolene + myrcene + ocimene_al + ocimene_t_b + ocimene_c_b + thujene_a + 2met_styrene + cymene_p + cymene_o + bornene + fenchene_a + camphene + phellandrene_a + phellandrene_b'
+/
+&fire_emis_nl
+/
+&carma_inparm
+/
+&ndep_inparm
+/

@@ -1,0 +1,42 @@
+2021-05-16 16:16:35: ./create_newcase --case FCSD_CAMChem --compset FCSD --res f19_f19_mg17 --run-unsupported --handle-preexisting-dirs u
+ ---------------------------------------------------
+2021-05-16 16:16:35: Compset longname is HIST_CAM60%CCTS%SDYN_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV
+ ---------------------------------------------------
+2021-05-16 16:16:35: Compset specification file is /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/config_compsets.xml
+ ---------------------------------------------------
+2021-05-16 16:16:35: Pes     specification file is /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/config_pes.xml
+ ---------------------------------------------------
+2021-05-16 16:16:35: Forcing is Historic transient 
+ ---------------------------------------------------
+2021-05-16 16:16:35: Using None coupler instances
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component ATM is CAM cam6 physics:CAM-Chem troposphere/stratosphere chem with simplified volatility basis set SOA scheme and modal aersols :
+ ---------------------------------------------------
+2021-05-16 16:16:35: ATM_GRID is 1.9x2.5
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component LND is clm5.0:Satellite phenology:
+ ---------------------------------------------------
+2021-05-16 16:16:35: LND_GRID is 1.9x2.5
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component ICE is Sea ICE (cice) model version 5 :prescribed cice
+ ---------------------------------------------------
+2021-05-16 16:16:35: ICE_GRID is 1.9x2.5
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component OCN is DOCN   prescribed ocean mode
+ ---------------------------------------------------
+2021-05-16 16:16:35: OCN_GRID is 1.9x2.5
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
+ ---------------------------------------------------
+2021-05-16 16:16:35: ROF_GRID is r05
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component GLC is Stub glacier (land ice) component
+ ---------------------------------------------------
+2021-05-16 16:16:35: GLC_GRID is null
+ ---------------------------------------------------
+2021-05-16 16:16:35: Component WAV is Stub wave component
+ ---------------------------------------------------
+2021-05-16 16:16:35: WAV_GRID is null
+ ---------------------------------------------------
+2021-05-16 16:16:35: ESP_GRID is None
+ ---------------------------------------------------

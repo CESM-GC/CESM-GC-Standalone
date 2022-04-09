@@ -1,0 +1,33 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Generating namelists for /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2
+Creating component namelists
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/buildnml
+CAM namelist copy: file1 /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2/Buildconf/camconf/atm_in file2 /glade/scratch/fritzt/FCSD_GEOSChem2/run/atm_in 
+CAM namelist copy: file1 /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2/Buildconf/camconf/species_database.yml file2 /glade/scratch/fritzt/FCSD_GEOSChem2/run/species_database.yml 
+CAM namelist copy: file1 /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2/Buildconf/camconf/input.geos file2 /glade/scratch/fritzt/FCSD_GEOSChem2/run/input.geos 
+CAM namelist copy: file1 /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2/Buildconf/camconf/HISTORY.rc file2 /glade/scratch/fritzt/FCSD_GEOSChem2/run/HISTORY.rc 
+CAM namelist copy: file1 /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2/Buildconf/camconf/HEMCO_Config.rc file2 /glade/scratch/fritzt/FCSD_GEOSChem2/run/HEMCO_Config.rc 
+CAM namelist copy: file1 /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_GEOSChem2/Buildconf/camconf/HEMCO_Diagn.rc file2 /glade/scratch/fritzt/FCSD_GEOSChem2/run/HEMCO_Diagn.rc 
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/clm//cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cice//cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/data_comps/docn/cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/mosart//cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/sglc/cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/swav/cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/sesp/cime_config/buildnml
+   Calling /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/drivers/mct/cime_config/buildnml
+   NOTE: ignoring setting of rof2ocn_ice_rmapname=idmap in seq_maps.rc
+   NOTE: ignoring setting of rof2ocn_liq_rmapname=idmap in seq_maps.rc
+Finished creating component namelists
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/scratch/fritzt/FCSD_GEOSChem2/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/p/cesmdata/cseg/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+2021-10-27 12:03:45 MODEL EXECUTION BEGINS HERE
+run command is mpiexec_mpt -p "%g:"  -np 576  omplace -tm open64  /glade/scratch/fritzt/FCSD_GEOSChem2/bld/cesm.exe  >> cesm.log.$LID 2>&1  
+2021-10-27 12:23:29 MODEL EXECUTION HAS FINISHED
+check for resubmit
+dout_s False 
+mach cheyenne 
+resubmit_num 0

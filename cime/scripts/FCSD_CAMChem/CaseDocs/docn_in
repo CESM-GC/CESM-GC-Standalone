@@ -1,0 +1,24 @@
+&docn_nml
+  decomp = "1d"
+  force_prognostic_true = .false.
+  restfilm = "undefined"
+  restfils = "undefined"
+/
+&shr_strdata_nml
+  datamode = "SSTDATA"
+  domainfile = "/glade/p/cesmdata/cseg/inputdata/share/domains/domain.ocn.fv1.9x2.5_gx1v7.181205.nc"
+  dtlimit = 1.5e0
+  fillalgo = "nn"
+  fillmask = "nomask"
+  fillread = "NOT_SET"
+  fillwrite = "NOT_SET"
+  mapalgo = "bilinear"
+  mapmask = "dstmask"
+  mapread = "NOT_SET"
+  mapwrite = "NOT_SET"
+  readmode = "single"
+  streams = "docn.streams.txt.prescribed 1850 1850 2016"
+  taxmode = "cycle"
+  tintalgo = "linear"
+  vectors = "null"
+/

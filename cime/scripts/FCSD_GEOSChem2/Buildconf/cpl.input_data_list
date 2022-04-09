@@ -1,0 +1,2 @@
+lnd2rof_fmapname = /glade/p/cesmdata/cseg/inputdata/lnd/clm2/mappingdata/maps/1.9x2.5/map_1.9x2.5_nomask_to_0.5x0.5_nomask_aave_da_c120522.nc
+rof2lnd_fmapname = /glade/p/cesmdata/cseg/inputdata/lnd/clm2/mappingdata/maps/1.9x2.5/map_0.5x0.5_nomask_to_1.9x2.5_nomask_aave_da_c120709.nc

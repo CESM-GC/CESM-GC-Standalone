@@ -1,0 +1,104 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+st_archive starting
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/rof.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/rof.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/atm.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/atm.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/lnd.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/lnd.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/cesm.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/cesm.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/ocn.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/ocn.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/ice.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/ice.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/cpl.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/logs/cpl.log.8551845.chadmin1.ib0.cheyenne.ucar.edu.210604-165451.gz
+-------------------------------------------
+Archiving restarts for date date(2016, 7, 1, 0, 0, 0)
+-------------------------------------------
+Archiving restarts for cam (atm)
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.r.2016-07-01-00000.nc
+ WARNING: ncdump -v nhfil /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.rs.2016-07-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: nhfil: No such variable
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.rs.2016-07-01-00000.nc
+Archiving restarts for clm (lnd)
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.r.2016-07-01-00000.nc
+ WARNING: ncdump -v locfnh /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.rh0.2016-07-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.rh0.2016-07-01-00000.nc
+Archiving restarts for cice (ice)
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cice.r.2016-07-01-00000.nc
+Archiving restarts for docn (ocn)
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.docn.rs1.2016-07-01-00000.bin
+Archiving restarts for mosart (rof)
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.r.2016-07-01-00000.nc
+ WARNING: ncdump -v locfnh /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.rh0.2016-07-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.rh0.2016-07-01-00000.nc
+Archiving restarts for drv (cpl)
+removing interim restart file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cpl.r.2016-07-01-00000.nc
+Archiving restarts for dart (esp)
+-------------------------------------------
+Archiving restarts for date date(2016, 10, 1, 0, 0, 0)
+-------------------------------------------
+Archiving restarts for cam (atm)
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.r.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.cam.r.2016-10-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.i.2016-01-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.cam.i.2016-01-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.h0.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.cam.h0.2016-09.nc
+ WARNING: ncdump -v nhfil /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.rs.2016-10-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: nhfil: No such variable
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.rs.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.cam.rs.2016-10-01-00000.nc
+Archiving restarts for clm (lnd)
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.r.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.clm2.r.2016-10-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.h0.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.clm2.h0.2016-09.nc
+ WARNING: ncdump -v locfnh /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.rh0.2016-10-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.rh0.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.clm2.rh0.2016-10-01-00000.nc
+Archiving restarts for cice (ice)
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cice.r.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.cice.r.2016-10-01-00000.nc
+Archiving restarts for docn (ocn)
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.docn.rs1.2016-10-01-00000.bin to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.docn.rs1.2016-10-01-00000.bin
+Archiving restarts for mosart (rof)
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.r.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.mosart.r.2016-10-01-00000.nc
+Copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.h0.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.mosart.h0.2016-09.nc
+ WARNING: ncdump -v locfnh /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.rh0.2016-10-01-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.rh0.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.mosart.rh0.2016-10-01-00000.nc
+Archiving restarts for drv (cpl)
+copying file /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cpl.r.2016-10-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rest/2016-10-01-00000/FCSD_GEOSChem2.cpl.r.2016-10-01-00000.nc
+Archiving restarts for dart (esp)
+Archiving history files for cam (atm)
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.h0.2016-06.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/atm/hist/FCSD_GEOSChem2.cam.h0.2016-06.nc 
+copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.h0.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/atm/hist/FCSD_GEOSChem2.cam.h0.2016-09.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.h0.2016-07.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/atm/hist/FCSD_GEOSChem2.cam.h0.2016-07.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.h0.2016-08.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/atm/hist/FCSD_GEOSChem2.cam.h0.2016-08.nc 
+copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cam.i.2016-01-01-00000.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/atm/hist/FCSD_GEOSChem2.cam.i.2016-01-01-00000.nc 
+Archiving history files for clm (lnd)
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.h0.2016-06.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/lnd/hist/FCSD_GEOSChem2.clm2.h0.2016-06.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.h0.2016-07.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/lnd/hist/FCSD_GEOSChem2.clm2.h0.2016-07.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.h0.2016-08.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/lnd/hist/FCSD_GEOSChem2.clm2.h0.2016-08.nc 
+copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.clm2.h0.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/lnd/hist/FCSD_GEOSChem2.clm2.h0.2016-09.nc 
+Archiving history files for cice (ice)
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cice.h.2016-07.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/ice/hist/FCSD_GEOSChem2.cice.h.2016-07.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cice.h.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/ice/hist/FCSD_GEOSChem2.cice.h.2016-09.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.cice.h.2016-08.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/ice/hist/FCSD_GEOSChem2.cice.h.2016-08.nc 
+Archiving history files for docn (ocn)
+Archiving history files for mosart (rof)
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.h0.2016-08.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rof/hist/FCSD_GEOSChem2.mosart.h0.2016-08.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.h0.2016-06.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rof/hist/FCSD_GEOSChem2.mosart.h0.2016-06.nc 
+copying /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.h0.2016-09.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rof/hist/FCSD_GEOSChem2.mosart.h0.2016-09.nc 
+moving /glade/scratch/fritzt/FCSD_GEOSChem2/run/FCSD_GEOSChem2.mosart.h0.2016-07.nc to /glade/scratch/fritzt/archive/FCSD_GEOSChem2/rof/hist/FCSD_GEOSChem2.mosart.h0.2016-07.nc 
+Archiving history files for drv (cpl)
+Archiving history files for dart (esp)
+st_archive completed
+resubmitting from st_archive, resubmit=2
+Submitting job 'case.run', resubmit=2
+submit_jobs case.run
+Submit job case.run
+Submitting job script qsub -q regular -l walltime=12:00:00 -A P19010000 -v ARGS_FOR_SCRIPT='--resubmit' .case.run
+Submitted job id is 8556795.chadmin1.ib0.cheyenne.ucar.edu
+Submit job case.st_archive
+Submitting job script qsub -q regular -l walltime=0:20:00 -A P19010000  -W depend=afterok:8556795.chadmin1.ib0.cheyenne.ucar.edu -v ARGS_FOR_SCRIPT='--resubmit' case.st_archive
+Submitted job id is 8556796.chadmin1.ib0.cheyenne.ucar.edu
+Submitted job case.run with id 8556795.chadmin1.ib0.cheyenne.ucar.edu
+Submitted job case.st_archive with id 8556796.chadmin1.ib0.cheyenne.ucar.edu

@@ -1,0 +1,2032 @@
+2021-05-16 16:16:35: xmlchange success <command> ./xmlchange RUN_STARTDATE=2015-01-01  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:35: xmlchange success <command> ./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=12:00:00  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:35: xmlchange success <command> ./xmlchange STOP_N=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:35: xmlchange success <command> ./xmlchange STOP_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:36: xmlchange success <command> ./xmlchange REST_N=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:36: xmlchange success <command> ./xmlchange REST_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:36: xmlchange success <command> ./xmlchange RESUBMIT=23  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:36: xmlchange success <command> ./xmlchange NTASKS_CPL=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:36: xmlchange success <command> ./xmlchange NTASKS_ATM=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:37: xmlchange success <command> ./xmlchange NTASKS_LND=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:37: xmlchange success <command> ./xmlchange NTASKS_ICE=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:37: xmlchange success <command> ./xmlchange NTASKS_OCN=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:37: xmlchange success <command> ./xmlchange NTASKS_ROF=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:37: xmlchange success <command> ./xmlchange NTASKS_GLC=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:37: xmlchange success <command> ./xmlchange NTASKS_WAV=288  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:38: xmlchange success <command> ./xmlchange NTHRDS_CPL=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:38: xmlchange success <command> ./xmlchange NTHRDS_ATM=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:38: xmlchange success <command> ./xmlchange NTHRDS_LND=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:38: xmlchange success <command> ./xmlchange NTHRDS_ICE=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:38: xmlchange success <command> ./xmlchange NTHRDS_OCN=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:39: xmlchange success <command> ./xmlchange NTHRDS_ROF=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:39: xmlchange success <command> ./xmlchange NTHRDS_GLC=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:39: xmlchange success <command> ./xmlchange NTHRDS_WAV=1  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:39: xmlchange success <command> ./xmlchange DOUT_S=FALSE  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:39: xmlchange success <command> ./xmlchange USE_ESMF_LIB=TRUE  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:39: xmlchange success <command> ./xmlchange ESMF_LOGFILE_KIND=ESMF_LOGKIND_SINGLE  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:40: xmlchange success <command> ./xmlchange JOB_QUEUE=regular  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:40: xmlchange success <command> ./xmlchange DEBUG=FALSE  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:40: xmlchange success <command> ./xmlchange TIMER_LEVEL=5  </command>
+ ---------------------------------------------------
+2021-05-16 16:16:40: case.setup starting 
+ ---------------------------------------------------
+2021-05-16 16:16:41: case.setup success 
+ ---------------------------------------------------
+2021-05-16 16:16:41: build.clean starting 
+ ---------------------------------------------------
+2021-05-16 16:18:39: build.clean success 
+ ---------------------------------------------------
+2021-05-16 16:18:43: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 16:24:47: case.build success 
+ ---------------------------------------------------
+2021-05-16 16:33:28: case.build starting 
+ ---------------------------------------------------
+2021-05-16 16:33:44: case.build error 
+ERROR: BUILD FAIL: cam.buildlib failed, cat /glade/scratch/fritzt/FCSD_CAMChem/bld/atm.bldlog.210516-163329
+ ---------------------------------------------------
+2021-05-16 16:35:29: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 16:36:36: case.build success 
+ ---------------------------------------------------
+2021-05-16 16:44:10: build.clean starting 
+ ---------------------------------------------------
+2021-05-16 16:46:07: build.clean success 
+ ---------------------------------------------------
+2021-05-16 16:46:13: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 16:52:13: case.build success 
+ ---------------------------------------------------
+2021-05-16 16:57:13: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 16:57:16: case.submit success case.run:8157007.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 16:59:21: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 17:00:13: case.build success 
+ ---------------------------------------------------
+2021-05-16 17:01:58: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 17:02:01: case.submit success case.run:8157044.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 17:02:52: case.run starting 
+ ---------------------------------------------------
+2021-05-16 17:02:55: model execution starting 
+ ---------------------------------------------------
+2021-05-16 17:03:01: model execution success 
+ ---------------------------------------------------
+2021-05-16 17:03:01: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8157044.chadmin1.ib0.cheyenne.ucar.edu.210516-170252
+ ---------------------------------------------------
+2021-05-16 17:10:47: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 17:10:50: case.submit success case.run:8157094.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 17:14:10: case.run starting 
+ ---------------------------------------------------
+2021-05-16 17:14:13: model execution starting 
+ ---------------------------------------------------
+2021-05-16 17:15:02: model execution success 
+ ---------------------------------------------------
+2021-05-16 17:15:02: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8157094.chadmin1.ib0.cheyenne.ucar.edu.210516-171410
+ ---------------------------------------------------
+2021-05-16 17:27:17: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 17:28:32: case.build success 
+ ---------------------------------------------------
+2021-05-16 17:28:44: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 17:28:47: case.submit success case.run:8157248.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 17:47:23: case.run starting 
+ ---------------------------------------------------
+2021-05-16 17:47:26: model execution starting 
+ ---------------------------------------------------
+2021-05-16 17:48:14: model execution success 
+ ---------------------------------------------------
+2021-05-16 17:48:14: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8157248.chadmin1.ib0.cheyenne.ucar.edu.210516-174723
+ ---------------------------------------------------
+2021-05-16 17:55:22: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 17:56:36: case.build success 
+ ---------------------------------------------------
+2021-05-16 18:01:13: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:01:17: case.submit success case.run:8157817.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:02:17: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:02:20: model execution starting 
+ ---------------------------------------------------
+2021-05-16 18:04:22: model execution success 
+ ---------------------------------------------------
+2021-05-16 18:04:22: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8157817.chadmin1.ib0.cheyenne.ucar.edu.210516-180217
+ ---------------------------------------------------
+2021-05-16 18:06:10: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:06:14: case.submit success case.run:8157855.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:10:16: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:10:19: model execution starting 
+ ---------------------------------------------------
+2021-05-16 18:10:36: model execution success 
+ ---------------------------------------------------
+2021-05-16 18:10:36: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8157855.chadmin1.ib0.cheyenne.ucar.edu.210516-181016
+ ---------------------------------------------------
+2021-05-16 18:22:16: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:22:19: case.submit success case.run:8158047.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:23:00: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:23:03: model execution starting 
+ ---------------------------------------------------
+2021-05-16 18:23:16: model execution success 
+ ---------------------------------------------------
+2021-05-16 18:23:16: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158047.chadmin1.ib0.cheyenne.ucar.edu.210516-182300
+ ---------------------------------------------------
+2021-05-16 18:26:00: build.clean starting 
+ ---------------------------------------------------
+2021-05-16 18:26:15: build.clean success 
+ ---------------------------------------------------
+2021-05-16 18:26:24: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+ M  ./components/cam/src/hemco/HEMCO
+        modified sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 18:32:15: case.build success 
+ ---------------------------------------------------
+2021-05-16 18:32:20: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:32:25: case.submit success case.run:8158115.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:34:25: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:34:27: model execution starting 
+ ---------------------------------------------------
+2021-05-16 18:34:40: model execution success 
+ ---------------------------------------------------
+2021-05-16 18:34:40: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158115.chadmin1.ib0.cheyenne.ucar.edu.210516-183425
+ ---------------------------------------------------
+2021-05-16 18:36:28: build.clean starting 
+ ---------------------------------------------------
+2021-05-16 18:36:42: build.clean success 
+ ---------------------------------------------------
+2021-05-16 18:36:52: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 18:42:43: case.build success 
+ ---------------------------------------------------
+2021-05-16 18:42:48: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:42:54: case.submit success case.run:8158194.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:43:28: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:43:30: model execution starting 
+ ---------------------------------------------------
+2021-05-16 18:43:37: model execution success 
+ ---------------------------------------------------
+2021-05-16 18:43:37: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158194.chadmin1.ib0.cheyenne.ucar.edu.210516-184328
+ ---------------------------------------------------
+2021-05-16 18:46:09: build.clean starting 
+ ---------------------------------------------------
+2021-05-16 18:46:24: build.clean success 
+ ---------------------------------------------------
+2021-05-16 18:46:29: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+ M  ./components/cam/src/hemco/HEMCO
+        modified sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 18:52:17: case.build success 
+ ---------------------------------------------------
+2021-05-16 18:52:22: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:52:25: case.submit success case.run:8158308.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:53:06: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:53:09: model execution starting 
+ ---------------------------------------------------
+2021-05-16 18:55:03: model execution success 
+ ---------------------------------------------------
+2021-05-16 18:55:03: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158308.chadmin1.ib0.cheyenne.ucar.edu.210516-185306
+ ---------------------------------------------------
+2021-05-16 18:58:21: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 18:58:24: case.submit success case.run:8158367.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 18:59:15: case.run starting 
+ ---------------------------------------------------
+2021-05-16 18:59:17: model execution starting 
+ ---------------------------------------------------
+2021-05-16 19:01:10: model execution success 
+ ---------------------------------------------------
+2021-05-16 19:01:10: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158367.chadmin1.ib0.cheyenne.ucar.edu.210516-185915
+ ---------------------------------------------------
+2021-05-16 19:04:37: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+ M  ./components/cam/src/hemco/HEMCO
+        modified sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 19:05:30: case.build success 
+ ---------------------------------------------------
+2021-05-16 19:05:36: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 19:05:39: case.submit success case.run:8158416.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 19:08:10: case.run starting 
+ ---------------------------------------------------
+2021-05-16 19:08:13: model execution starting 
+ ---------------------------------------------------
+2021-05-16 19:10:03: model execution success 
+ ---------------------------------------------------
+2021-05-16 19:10:03: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158416.chadmin1.ib0.cheyenne.ucar.edu.210516-190810
+ ---------------------------------------------------
+2021-05-16 19:10:52: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+ M  ./components/cam/src/hemco/HEMCO
+        modified sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 19:11:46: case.build success 
+ ---------------------------------------------------
+2021-05-16 19:11:51: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 19:11:54: case.submit success case.run:8158512.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 19:14:30: case.run starting 
+ ---------------------------------------------------
+2021-05-16 19:14:34: model execution starting 
+ ---------------------------------------------------
+2021-05-16 19:16:23: model execution success 
+ ---------------------------------------------------
+2021-05-16 19:16:23: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158512.chadmin1.ib0.cheyenne.ucar.edu.210516-191430
+ ---------------------------------------------------
+2021-05-16 19:20:12: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+ M  ./components/cam/src/hemco/HEMCO
+        modified sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 19:21:24: case.build success 
+ ---------------------------------------------------
+2021-05-16 19:21:29: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 19:21:34: case.submit success case.run:8158564.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 19:22:51: case.run starting 
+ ---------------------------------------------------
+2021-05-16 19:22:54: model execution starting 
+ ---------------------------------------------------
+2021-05-16 19:24:43: model execution success 
+ ---------------------------------------------------
+2021-05-16 19:24:43: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158564.chadmin1.ib0.cheyenne.ucar.edu.210516-192251
+ ---------------------------------------------------
+2021-05-16 19:31:19: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+ M  ./components/cam/src/hemco
+        modified sandbox, on development
+ M  ./components/cam/src/hemco/HEMCO
+        modified sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-16 19:32:32: case.build success 
+ ---------------------------------------------------
+2021-05-16 19:32:38: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 19:32:41: case.submit success case.run:8158682.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 19:34:06: case.run starting 
+ ---------------------------------------------------
+2021-05-16 19:34:10: model execution starting 
+ ---------------------------------------------------
+2021-05-16 19:36:02: model execution success 
+ ---------------------------------------------------
+2021-05-16 19:36:02: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158682.chadmin1.ib0.cheyenne.ucar.edu.210516-193406
+ ---------------------------------------------------
+2021-05-16 19:37:52: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 19:37:55: case.submit success case.run:8158720.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 19:38:01: case.run starting 
+ ---------------------------------------------------
+2021-05-16 19:38:05: model execution starting 
+ ---------------------------------------------------
+2021-05-16 19:40:02: model execution success 
+ ---------------------------------------------------
+2021-05-16 19:40:02: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158720.chadmin1.ib0.cheyenne.ucar.edu.210516-193801
+ ---------------------------------------------------
+2021-05-16 20:00:50: case.submit starting 
+ ---------------------------------------------------
+2021-05-16 20:00:55: case.submit success case.run:8158998.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-16 20:01:34: case.run starting 
+ ---------------------------------------------------
+2021-05-16 20:01:37: model execution starting 
+ ---------------------------------------------------
+2021-05-16 20:03:04: model execution success 
+ ---------------------------------------------------
+2021-05-16 20:03:04: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8158998.chadmin1.ib0.cheyenne.ucar.edu.210516-200134
+ ---------------------------------------------------
+2021-05-17 11:59:50: build.clean starting 
+ ---------------------------------------------------
+2021-05-17 12:00:07: build.clean success 
+ ---------------------------------------------------
+2021-05-17 12:00:13: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+s   ./components/cam/src/hemco
+        clean sandbox, development --> origin/development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-17 12:05:59: case.build success 
+ ---------------------------------------------------
+2021-05-17 12:06:31: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 12:06:35: case.submit success case.run:8170501.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 12:06:40: case.run starting 
+ ---------------------------------------------------
+2021-05-17 12:06:42: model execution starting 
+ ---------------------------------------------------
+2021-05-17 12:08:18: model execution success 
+ ---------------------------------------------------
+2021-05-17 12:08:18: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8170501.chadmin1.ib0.cheyenne.ucar.edu.210517-120640
+ ---------------------------------------------------
+2021-05-17 14:06:01: build.clean starting 
+ ---------------------------------------------------
+2021-05-17 14:06:16: build.clean success 
+ ---------------------------------------------------
+2021-05-17 14:06:21: case.build starting 
+ ---------------------------------------------------
+2021-05-17 14:14:29: build.clean starting 
+ ---------------------------------------------------
+2021-05-17 14:14:43: build.clean success 
+ ---------------------------------------------------
+2021-05-17 14:14:48: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+s   ./components/cam/src/hemco
+        clean sandbox, development --> origin/development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-17 14:20:51: case.build success 
+ ---------------------------------------------------
+2021-05-17 14:22:45: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 14:22:50: case.submit success case.run:8173547.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 14:22:59: case.run starting 
+ ---------------------------------------------------
+2021-05-17 14:23:02: model execution starting 
+ ---------------------------------------------------
+2021-05-17 14:26:39: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+s   ./components/cam/src/hemco
+        clean sandbox, development --> origin/development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-17 14:27:40: case.build success 
+ ---------------------------------------------------
+2021-05-17 14:27:46: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 14:27:50: case.submit success case.run:8173620.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 14:27:58: case.run starting 
+ ---------------------------------------------------
+2021-05-17 14:28:01: model execution starting 
+ ---------------------------------------------------
+2021-05-17 15:46:25: model execution success 
+ ---------------------------------------------------
+2021-05-17 15:46:25: case.run success 
+ ---------------------------------------------------
+2021-05-17 15:46:25: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 15:46:26: case.submit success case.run:8175223.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 15:46:31: case.run starting 
+ ---------------------------------------------------
+2021-05-17 15:46:34: model execution starting 
+ ---------------------------------------------------
+2021-05-17 17:04:18: model execution success 
+ ---------------------------------------------------
+2021-05-17 17:04:18: case.run success 
+ ---------------------------------------------------
+2021-05-17 17:04:19: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 17:04:20: case.submit success case.run:8177262.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 17:04:30: case.run starting 
+ ---------------------------------------------------
+2021-05-17 17:04:32: model execution starting 
+ ---------------------------------------------------
+2021-05-17 18:35:09: model execution success 
+ ---------------------------------------------------
+2021-05-17 18:35:09: case.run success 
+ ---------------------------------------------------
+2021-05-17 18:35:09: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 18:35:12: case.submit success case.run:8178905.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 18:35:20: case.run starting 
+ ---------------------------------------------------
+2021-05-17 18:35:23: model execution starting 
+ ---------------------------------------------------
+2021-05-17 19:51:54: model execution success 
+ ---------------------------------------------------
+2021-05-17 19:51:54: case.run success 
+ ---------------------------------------------------
+2021-05-17 19:51:55: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 19:51:55: case.submit success case.run:8179832.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 19:52:12: case.run starting 
+ ---------------------------------------------------
+2021-05-17 19:52:15: model execution starting 
+ ---------------------------------------------------
+2021-05-17 21:08:44: model execution success 
+ ---------------------------------------------------
+2021-05-17 21:08:44: case.run success 
+ ---------------------------------------------------
+2021-05-17 21:08:45: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 21:08:45: case.submit success case.run:8181132.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 21:10:04: case.run starting 
+ ---------------------------------------------------
+2021-05-17 21:10:07: model execution starting 
+ ---------------------------------------------------
+2021-05-17 22:24:18: model execution success 
+ ---------------------------------------------------
+2021-05-17 22:24:18: case.run success 
+ ---------------------------------------------------
+2021-05-17 22:24:19: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 22:24:19: case.submit success case.run:8182300.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 22:24:29: case.run starting 
+ ---------------------------------------------------
+2021-05-17 22:24:31: model execution starting 
+ ---------------------------------------------------
+2021-05-17 23:47:59: model execution success 
+ ---------------------------------------------------
+2021-05-17 23:47:59: case.run success 
+ ---------------------------------------------------
+2021-05-17 23:48:00: case.submit starting 
+ ---------------------------------------------------
+2021-05-17 23:48:01: case.submit success case.run:8184108.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-17 23:51:13: case.run starting 
+ ---------------------------------------------------
+2021-05-17 23:51:17: model execution starting 
+ ---------------------------------------------------
+2021-05-18 01:07:17: model execution success 
+ ---------------------------------------------------
+2021-05-18 01:07:17: case.run success 
+ ---------------------------------------------------
+2021-05-18 01:07:18: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 01:07:19: case.submit success case.run:8185650.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 01:07:29: case.run starting 
+ ---------------------------------------------------
+2021-05-18 01:07:31: model execution starting 
+ ---------------------------------------------------
+2021-05-18 02:26:27: model execution success 
+ ---------------------------------------------------
+2021-05-18 02:26:27: case.run success 
+ ---------------------------------------------------
+2021-05-18 02:26:28: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 02:26:29: case.submit success case.run:8186610.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 03:06:27: case.run starting 
+ ---------------------------------------------------
+2021-05-18 03:06:31: model execution starting 
+ ---------------------------------------------------
+2021-05-18 04:33:49: model execution success 
+ ---------------------------------------------------
+2021-05-18 04:33:49: case.run success 
+ ---------------------------------------------------
+2021-05-18 04:33:50: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 04:33:51: case.submit success case.run:8188278.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 04:33:59: case.run starting 
+ ---------------------------------------------------
+2021-05-18 04:34:02: model execution starting 
+ ---------------------------------------------------
+2021-05-18 05:49:54: model execution success 
+ ---------------------------------------------------
+2021-05-18 05:49:55: case.run success 
+ ---------------------------------------------------
+2021-05-18 05:49:55: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 05:49:56: case.submit success case.run:8189154.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 05:50:02: case.run starting 
+ ---------------------------------------------------
+2021-05-18 05:50:05: model execution starting 
+ ---------------------------------------------------
+2021-05-18 07:10:20: model execution success 
+ ---------------------------------------------------
+2021-05-18 07:10:20: case.run success 
+ ---------------------------------------------------
+2021-05-18 07:10:21: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 07:10:25: case.submit success case.run:8190041.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 07:10:31: case.run starting 
+ ---------------------------------------------------
+2021-05-18 07:10:34: model execution starting 
+ ---------------------------------------------------
+2021-05-18 08:30:57: model execution success 
+ ---------------------------------------------------
+2021-05-18 08:30:57: case.run success 
+ ---------------------------------------------------
+2021-05-18 08:30:58: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 08:30:59: case.submit success case.run:8190884.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 08:31:03: case.run starting 
+ ---------------------------------------------------
+2021-05-18 08:31:07: model execution starting 
+ ---------------------------------------------------
+2021-05-18 09:45:18: model execution success 
+ ---------------------------------------------------
+2021-05-18 09:45:18: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8190884.chadmin1.ib0.cheyenne.ucar.edu.210518-083103
+ ---------------------------------------------------
+2021-05-18 10:30:38: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 10:30:47: case.submit success case.run:8192383.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 10:31:00: case.run starting 
+ ---------------------------------------------------
+2021-05-18 10:31:04: model execution starting 
+ ---------------------------------------------------
+2021-05-18 11:45:01: model execution success 
+ ---------------------------------------------------
+2021-05-18 11:45:02: case.run success 
+ ---------------------------------------------------
+2021-05-18 11:45:02: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 11:45:07: case.submit success case.run:8193567.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 11:45:11: case.run starting 
+ ---------------------------------------------------
+2021-05-18 11:45:14: model execution starting 
+ ---------------------------------------------------
+2021-05-18 13:10:47: model execution success 
+ ---------------------------------------------------
+2021-05-18 13:10:47: case.run success 
+ ---------------------------------------------------
+2021-05-18 13:10:48: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 13:10:49: case.submit success case.run:8195505.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 13:10:59: case.run starting 
+ ---------------------------------------------------
+2021-05-18 13:11:02: model execution starting 
+ ---------------------------------------------------
+2021-05-18 14:33:05: model execution success 
+ ---------------------------------------------------
+2021-05-18 14:33:05: case.run success 
+ ---------------------------------------------------
+2021-05-18 14:33:05: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 14:33:07: case.submit success case.run:8196752.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 14:33:19: case.run starting 
+ ---------------------------------------------------
+2021-05-18 14:33:23: model execution starting 
+ ---------------------------------------------------
+2021-05-18 15:59:11: model execution success 
+ ---------------------------------------------------
+2021-05-18 15:59:11: case.run success 
+ ---------------------------------------------------
+2021-05-18 15:59:12: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 15:59:15: case.submit success case.run:8198680.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 15:59:20: case.run starting 
+ ---------------------------------------------------
+2021-05-18 15:59:24: model execution starting 
+ ---------------------------------------------------
+2021-05-18 17:14:50: model execution success 
+ ---------------------------------------------------
+2021-05-18 17:14:50: case.run success 
+ ---------------------------------------------------
+2021-05-18 17:14:51: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 17:14:55: case.submit success case.run:8199500.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 17:19:43: case.run starting 
+ ---------------------------------------------------
+2021-05-18 17:19:46: model execution starting 
+ ---------------------------------------------------
+2021-05-18 18:42:26: model execution success 
+ ---------------------------------------------------
+2021-05-18 18:42:26: case.run success 
+ ---------------------------------------------------
+2021-05-18 18:42:27: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 18:42:28: case.submit success case.run:8200359.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 18:45:54: case.run starting 
+ ---------------------------------------------------
+2021-05-18 18:45:58: model execution starting 
+ ---------------------------------------------------
+2021-05-18 20:07:45: model execution success 
+ ---------------------------------------------------
+2021-05-18 20:07:45: case.run success 
+ ---------------------------------------------------
+2021-05-18 20:07:46: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 20:07:46: case.submit success case.run:8201511.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 20:11:40: case.run starting 
+ ---------------------------------------------------
+2021-05-18 20:11:43: model execution starting 
+ ---------------------------------------------------
+2021-05-18 21:34:18: model execution success 
+ ---------------------------------------------------
+2021-05-18 21:34:18: case.run success 
+ ---------------------------------------------------
+2021-05-18 21:34:19: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 21:34:19: case.submit success case.run:8202166.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 21:37:47: case.run starting 
+ ---------------------------------------------------
+2021-05-18 21:37:51: model execution starting 
+ ---------------------------------------------------
+2021-05-18 23:01:12: model execution success 
+ ---------------------------------------------------
+2021-05-18 23:01:12: case.run success 
+ ---------------------------------------------------
+2021-05-18 23:01:13: case.submit starting 
+ ---------------------------------------------------
+2021-05-18 23:01:15: case.submit success case.run:8202903.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-18 23:06:10: case.run starting 
+ ---------------------------------------------------
+2021-05-18 23:06:13: model execution starting 
+ ---------------------------------------------------
+2021-05-19 00:21:13: model execution success 
+ ---------------------------------------------------
+2021-05-19 00:21:13: case.run success 
+ ---------------------------------------------------
+2021-05-19 00:21:13: case.submit starting 
+ ---------------------------------------------------
+2021-05-19 00:21:16: case.submit success case.run:8203836.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-19 00:25:38: case.run starting 
+ ---------------------------------------------------
+2021-05-19 00:25:40: model execution starting 
+ ---------------------------------------------------
+2021-05-19 01:52:27: model execution success 
+ ---------------------------------------------------
+2021-05-19 01:52:27: case.run success 
+ ---------------------------------------------------
+2021-05-20 19:49:27: xmlchange success <command> ./xmlchange RESUBMIT=1  </command>
+ ---------------------------------------------------
+2021-05-20 19:49:34: case.submit starting 
+ ---------------------------------------------------
+2021-05-20 19:49:38: case.submit success case.run:8229160.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-20 19:50:52: case.run starting 
+ ---------------------------------------------------
+2021-05-20 19:50:55: model execution starting 
+ ---------------------------------------------------
+2021-05-20 19:51:07: model execution success 
+ ---------------------------------------------------
+2021-05-20 19:51:07: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8229160.chadmin1.ib0.cheyenne.ucar.edu.210520-195052
+ ---------------------------------------------------
+2021-05-20 19:55:12: case.submit starting 
+ ---------------------------------------------------
+2021-05-20 19:55:15: case.submit success case.run:8229261.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-20 19:58:26: case.run starting 
+ ---------------------------------------------------
+2021-05-20 19:58:28: model execution starting 
+ ---------------------------------------------------
+2021-05-20 19:58:47: model execution success 
+ ---------------------------------------------------
+2021-05-20 19:58:47: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8229261.chadmin1.ib0.cheyenne.ucar.edu.210520-195826
+ ---------------------------------------------------
+2021-05-20 20:01:35: case.submit starting 
+ ---------------------------------------------------
+2021-05-20 20:01:39: case.submit success case.run:8229289.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-20 20:04:05: case.run starting 
+ ---------------------------------------------------
+2021-05-20 20:04:07: model execution starting 
+ ---------------------------------------------------
+2021-05-20 20:04:43: model execution success 
+ ---------------------------------------------------
+2021-05-20 20:04:43: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.8229289.chadmin1.ib0.cheyenne.ucar.edu.210520-200405
+ ---------------------------------------------------
+2021-05-20 20:15:12: case.submit starting 
+ ---------------------------------------------------
+2021-05-20 20:15:17: case.submit success case.run:8229402.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-20 20:15:29: case.run starting 
+ ---------------------------------------------------
+2021-05-20 20:15:32: model execution starting 
+ ---------------------------------------------------
+2021-05-20 21:38:51: model execution success 
+ ---------------------------------------------------
+2021-05-20 21:38:51: case.run success 
+ ---------------------------------------------------
+2021-05-20 21:38:51: case.submit starting 
+ ---------------------------------------------------
+2021-05-20 21:38:56: case.submit success case.run:8230261.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-20 21:39:09: case.run starting 
+ ---------------------------------------------------
+2021-05-20 21:39:13: model execution starting 
+ ---------------------------------------------------
+2021-05-20 23:06:05: model execution success 
+ ---------------------------------------------------
+2021-05-20 23:06:05: case.run success 
+ ---------------------------------------------------
+2021-05-21 12:01:24: xmlchange success <command> ./xmlchange DOUT_S=TRUE  </command>
+ ---------------------------------------------------
+2021-05-24 14:41:38: xmlchange success <command> ./xmlchange REST_N=3  </command>
+ ---------------------------------------------------
+2021-05-24 14:41:41: xmlchange success <command> ./xmlchange STOP_N=3  </command>
+ ---------------------------------------------------
+2021-05-24 14:41:45: xmlchange success <command> ./xmlchange RESUBMIT=8  </command>
+ ---------------------------------------------------
+2021-05-24 14:41:50: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2021-05-24 14:43:34: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+s   ./components/cam/src/hemco
+        clean sandbox, development --> origin/development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+ M  ./components/clm
+        modified sandbox, on CESM-GC_dev
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-05-24 14:47:08: case.build success 
+ ---------------------------------------------------
+2021-05-24 14:53:29: case.submit starting 
+ ---------------------------------------------------
+2021-05-24 14:53:41: case.submit success case.run:8328519.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8328524.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-24 14:54:01: case.run starting 
+ ---------------------------------------------------
+2021-05-24 14:54:03: model execution starting 
+ ---------------------------------------------------
+2021-05-24 18:38:22: model execution success 
+ ---------------------------------------------------
+2021-05-24 18:38:23: case.run success 
+ ---------------------------------------------------
+2021-05-24 18:38:33: st_archive starting 
+ ---------------------------------------------------
+2021-05-24 18:38:39: st_archive success 
+ ---------------------------------------------------
+2021-05-24 18:38:39: case.submit starting 
+ ---------------------------------------------------
+2021-05-24 18:38:42: case.submit success case.run:8332150.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8332151.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-24 18:38:52: case.run starting 
+ ---------------------------------------------------
+2021-05-24 18:38:56: model execution starting 
+ ---------------------------------------------------
+2021-05-24 22:18:59: model execution success 
+ ---------------------------------------------------
+2021-05-24 22:18:59: case.run success 
+ ---------------------------------------------------
+2021-05-24 22:19:12: st_archive starting 
+ ---------------------------------------------------
+2021-05-24 22:19:18: st_archive success 
+ ---------------------------------------------------
+2021-05-24 22:19:18: case.submit starting 
+ ---------------------------------------------------
+2021-05-24 22:19:19: case.submit success case.run:8335096.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8335097.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-24 22:19:22: case.run starting 
+ ---------------------------------------------------
+2021-05-24 22:19:25: model execution starting 
+ ---------------------------------------------------
+2021-05-25 02:40:36: model execution success 
+ ---------------------------------------------------
+2021-05-25 02:40:36: case.run success 
+ ---------------------------------------------------
+2021-05-25 02:40:52: st_archive starting 
+ ---------------------------------------------------
+2021-05-25 02:40:58: st_archive success 
+ ---------------------------------------------------
+2021-05-25 02:40:58: case.submit starting 
+ ---------------------------------------------------
+2021-05-25 02:41:00: case.submit success case.run:8338555.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8338556.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-25 02:41:09: case.run starting 
+ ---------------------------------------------------
+2021-05-25 02:41:14: model execution starting 
+ ---------------------------------------------------
+2021-05-25 07:06:28: model execution success 
+ ---------------------------------------------------
+2021-05-25 07:06:47: case.run success 
+ ---------------------------------------------------
+2021-05-25 07:06:57: st_archive starting 
+ ---------------------------------------------------
+2021-05-25 07:07:07: st_archive success 
+ ---------------------------------------------------
+2021-05-25 07:07:07: case.submit starting 
+ ---------------------------------------------------
+2021-05-25 07:07:09: case.submit success case.run:8343026.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8343027.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-25 07:07:12: case.run starting 
+ ---------------------------------------------------
+2021-05-25 07:07:16: model execution starting 
+ ---------------------------------------------------
+2021-05-25 10:55:51: model execution success 
+ ---------------------------------------------------
+2021-05-25 10:55:52: case.run success 
+ ---------------------------------------------------
+2021-05-25 10:56:02: st_archive starting 
+ ---------------------------------------------------
+2021-05-25 10:56:10: st_archive success 
+ ---------------------------------------------------
+2021-05-25 10:56:10: case.submit starting 
+ ---------------------------------------------------
+2021-05-25 10:56:18: case.submit success case.run:8344463.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8344464.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-25 10:56:23: case.run starting 
+ ---------------------------------------------------
+2021-05-25 10:56:25: model execution starting 
+ ---------------------------------------------------
+2021-05-25 14:47:37: model execution success 
+ ---------------------------------------------------
+2021-05-25 14:47:37: case.run success 
+ ---------------------------------------------------
+2021-05-25 14:48:01: st_archive starting 
+ ---------------------------------------------------
+2021-05-25 14:48:10: st_archive success 
+ ---------------------------------------------------
+2021-05-25 14:48:10: case.submit starting 
+ ---------------------------------------------------
+2021-05-25 14:48:19: case.submit success case.run:8349181.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8349182.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-25 14:48:24: case.run starting 
+ ---------------------------------------------------
+2021-05-25 14:48:29: model execution starting 
+ ---------------------------------------------------
+2021-05-25 18:56:12: model execution success 
+ ---------------------------------------------------
+2021-05-25 18:56:12: case.run success 
+ ---------------------------------------------------
+2021-05-25 18:56:30: st_archive starting 
+ ---------------------------------------------------
+2021-05-25 18:56:39: st_archive success 
+ ---------------------------------------------------
+2021-05-25 18:56:39: case.submit starting 
+ ---------------------------------------------------
+2021-05-25 18:56:41: case.submit success case.run:8354714.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8354715.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-25 18:57:00: case.run starting 
+ ---------------------------------------------------
+2021-05-25 18:57:04: model execution starting 
+ ---------------------------------------------------
+2021-05-25 22:38:03: model execution success 
+ ---------------------------------------------------
+2021-05-25 22:38:03: case.run success 
+ ---------------------------------------------------
+2021-05-25 22:38:15: st_archive starting 
+ ---------------------------------------------------
+2021-05-25 22:38:23: st_archive success 
+ ---------------------------------------------------
+2021-05-25 22:38:23: case.submit starting 
+ ---------------------------------------------------
+2021-05-25 22:38:29: case.submit success case.run:8357598.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:8357599.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-05-25 22:43:21: case.run starting 
+ ---------------------------------------------------
+2021-05-25 22:43:25: model execution starting 
+ ---------------------------------------------------
+2021-05-26 02:12:56: model execution success 
+ ---------------------------------------------------
+2021-05-26 02:12:57: case.run success 
+ ---------------------------------------------------
+2021-05-26 02:13:14: st_archive starting 
+ ---------------------------------------------------
+2021-05-26 02:13:22: st_archive success 
+ ---------------------------------------------------
+2021-10-22 18:44:56: xmlchange success <command> ./xmlchange CONTINUE_RUN=FALSE  </command>
+ ---------------------------------------------------
+2021-10-22 18:45:13: xmlchange success <command> ./xmlchange RESUBMIT=8  </command>
+ ---------------------------------------------------
+2021-10-22 18:46:03: xmlchange success <command> ./xmlchange PROJECT=P19010000  </command>
+ ---------------------------------------------------
+2021-10-22 18:46:18: xmlchange success <command> ./xmlchange CHARGE_ACCOUNT=P19010000  </command>
+ ---------------------------------------------------
+2021-10-22 18:46:46: case.submit starting 
+ ---------------------------------------------------
+2021-10-22 18:46:48: case.submit error 
+
+ ---------------------------------------------------
+2021-10-22 18:47:54: case.submit starting 
+ ---------------------------------------------------
+2021-10-22 18:48:12: case.submit success case.run:1138074.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1138076.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-22 18:48:52: case.run starting 
+ ---------------------------------------------------
+2021-10-22 18:48:56: model execution starting 
+ ---------------------------------------------------
+2021-10-22 18:48:56: model execution success 
+ ---------------------------------------------------
+2021-10-22 18:48:56: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.1138074.chadmin1.ib0.cheyenne.ucar.edu.211022-184852
+ ---------------------------------------------------
+2021-10-22 19:05:51: case.build starting 
+ ---------------------------------------------------
+CESM version is cesm2.1.1-exp17
+Processing externals description file : Externals.cfg
+Processing externals description file : Externals_CAM.cfg
+Processing externals description file : Externals_HCO.cfg
+Processing externals description file : Externals_CISM.cfg
+Processing externals description file : Externals_CLM.cfg
+Processing externals description file : Externals_POP.cfg
+Checking status of externals: cam, chem_proc, carma, clubb, cosp2, geoschem, hemco, hemco_src, cice, cime, cism, source_cism, clm, fates, ptclm, mosart, pop, cvmix, marbl, rtm, ww3, 
+ M  ./cime
+        modified sandbox, on CESM-GC_dev
+sM  ./components/cam
+        modified sandbox, CESM-GC_dev --> unknown_remote/feature/13.0.0+CESM
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_03_rel
+s   ./components/cam/src/hemco
+        clean sandbox, development --> origin/development
+    ./components/cam/src/hemco/HEMCO
+        clean sandbox, on dev-cesm
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cice
+        clean sandbox, on cice5_cesm2_1_1_20190321
+    ./components/cism
+        clean sandbox, on release-cesm2.0.04
+    ./components/cism/source_cism
+        clean sandbox, on release-cism2.1.03
+    ./components/clm
+        clean sandbox, on CESM-GC_dev2
+    ./components/clm/src/fates
+        clean sandbox, on fates_s1.21.0_a7.0.0_br_rev2
+    ./components/clm/tools/PTCLM
+        clean sandbox, on PTCLM2_180611
+    ./components/mosart
+        clean sandbox, on release-cesm2.0.03
+    ./components/pop
+        clean sandbox, on pop2_cesm2_1_rel_n06
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.93-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.1-n00
+    ./components/rtm
+        clean sandbox, on release-cesm2.0.02
+    ./components/ww3
+        clean sandbox, on ww3_181001
+s   components/cam/src/chemistry/geoschem/geoschem_src
+        clean sandbox, CESM --> unknown_remote/CESM
+    components/cam/src/physics/clubb
+        clean sandbox, on clubb_core/release_tags/clubb_r8099_n02_rel
+    components/cam/src/physics/cosp2/src
+        clean sandbox, on CFMIP/COSPv2.0/tags/v2.0.3cesm/src
+2021-10-22 19:17:21: case.build success 
+ ---------------------------------------------------
+2021-10-22 19:21:12: case.submit starting 
+ ---------------------------------------------------
+2021-10-22 19:21:20: case.submit success case.run:1138834.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1138835.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-22 19:21:30: case.run starting 
+ ---------------------------------------------------
+2021-10-22 19:21:34: model execution starting 
+ ---------------------------------------------------
+2021-10-22 19:21:46: model execution success 
+ ---------------------------------------------------
+2021-10-22 19:21:46: case.run error 
+ERROR: RUN FAIL: Command 'mpiexec_mpt -p "%g:"  -np 288  omplace -tm open64  /glade/scratch/fritzt/FCSD_CAMChem/bld/cesm.exe  >> cesm.log.$LID 2>&1 ' failed
+See log file for details: /glade/scratch/fritzt/FCSD_CAMChem/run/cesm.log.1138834.chadmin1.ib0.cheyenne.ucar.edu.211022-192130
+ ---------------------------------------------------
+2021-10-22 19:29:57: case.submit starting 
+ ---------------------------------------------------
+2021-10-22 19:30:15: case.submit success case.run:1138869.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1138870.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-22 19:32:32: case.run starting 
+ ---------------------------------------------------
+2021-10-22 19:32:36: model execution starting 
+ ---------------------------------------------------
+2021-10-22 23:18:58: model execution success 
+ ---------------------------------------------------
+2021-10-22 23:19:00: case.run success 
+ ---------------------------------------------------
+2021-10-22 23:19:13: st_archive starting 
+ ---------------------------------------------------
+2021-10-22 23:19:19: st_archive success 
+ ---------------------------------------------------
+2021-10-22 23:19:19: case.submit starting 
+ ---------------------------------------------------
+2021-10-22 23:19:25: case.submit success case.run:1140841.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1140842.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-22 23:19:31: case.run starting 
+ ---------------------------------------------------
+2021-10-22 23:19:34: model execution starting 
+ ---------------------------------------------------
+2021-10-23 03:29:23: model execution success 
+ ---------------------------------------------------
+2021-10-23 03:29:23: case.run success 
+ ---------------------------------------------------
+2021-10-23 03:29:32: st_archive starting 
+ ---------------------------------------------------
+2021-10-23 03:29:39: st_archive success 
+ ---------------------------------------------------
+2021-10-23 03:29:39: case.submit starting 
+ ---------------------------------------------------
+2021-10-23 03:29:50: case.submit success case.run:1143330.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1143331.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-23 03:30:12: case.run starting 
+ ---------------------------------------------------
+2021-10-23 03:30:16: model execution starting 
+ ---------------------------------------------------
+2021-10-23 07:05:58: model execution success 
+ ---------------------------------------------------
+2021-10-23 07:05:58: case.run success 
+ ---------------------------------------------------
+2021-10-23 07:06:22: st_archive starting 
+ ---------------------------------------------------
+2021-10-23 07:06:28: st_archive success 
+ ---------------------------------------------------
+2021-10-23 07:06:28: case.submit starting 
+ ---------------------------------------------------
+2021-10-23 07:06:33: case.submit success case.run:1144478.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1144479.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-23 07:07:23: case.run starting 
+ ---------------------------------------------------
+2021-10-23 07:07:27: model execution starting 
+ ---------------------------------------------------
+2021-10-23 10:48:15: model execution success 
+ ---------------------------------------------------
+2021-10-23 10:48:15: case.run success 
+ ---------------------------------------------------
+2021-10-23 10:48:31: st_archive starting 
+ ---------------------------------------------------
+2021-10-23 10:48:38: st_archive success 
+ ---------------------------------------------------
+2021-10-23 10:48:38: case.submit starting 
+ ---------------------------------------------------
+2021-10-23 10:48:50: case.submit success case.run:1145134.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1145136.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-23 10:49:02: case.run starting 
+ ---------------------------------------------------
+2021-10-23 10:49:06: model execution starting 
+ ---------------------------------------------------
+2021-10-23 14:49:45: model execution success 
+ ---------------------------------------------------
+2021-10-23 14:49:46: case.run success 
+ ---------------------------------------------------
+2021-10-23 14:50:09: st_archive starting 
+ ---------------------------------------------------
+2021-10-23 14:50:17: st_archive success 
+ ---------------------------------------------------
+2021-10-23 14:50:17: case.submit starting 
+ ---------------------------------------------------
+2021-10-23 14:50:21: case.submit success case.run:1146338.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1146339.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-23 14:50:28: case.run starting 
+ ---------------------------------------------------
+2021-10-23 14:50:32: model execution starting 
+ ---------------------------------------------------
+2021-10-23 18:24:45: model execution success 
+ ---------------------------------------------------
+2021-10-23 18:24:45: case.run success 
+ ---------------------------------------------------
+2021-10-23 18:24:53: st_archive starting 
+ ---------------------------------------------------
+2021-10-23 18:25:02: st_archive success 
+ ---------------------------------------------------
+2021-10-23 18:25:02: case.submit starting 
+ ---------------------------------------------------
+2021-10-23 18:25:14: case.submit success case.run:1147357.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1147358.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-23 18:25:19: case.run starting 
+ ---------------------------------------------------
+2021-10-23 18:25:23: model execution starting 
+ ---------------------------------------------------
+2021-10-23 22:05:51: model execution success 
+ ---------------------------------------------------
+2021-10-23 22:05:51: case.run success 
+ ---------------------------------------------------
+2021-10-23 22:06:01: st_archive starting 
+ ---------------------------------------------------
+2021-10-23 22:06:09: st_archive success 
+ ---------------------------------------------------
+2021-10-23 22:06:09: case.submit starting 
+ ---------------------------------------------------
+2021-10-23 22:06:17: case.submit success case.run:1148336.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1148337.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-23 22:06:21: case.run starting 
+ ---------------------------------------------------
+2021-10-23 22:06:23: model execution starting 
+ ---------------------------------------------------
+2021-10-24 01:54:09: model execution success 
+ ---------------------------------------------------
+2021-10-24 01:54:09: case.run success 
+ ---------------------------------------------------
+2021-10-24 01:54:23: st_archive starting 
+ ---------------------------------------------------
+2021-10-24 01:54:32: st_archive success 
+ ---------------------------------------------------
+2021-10-24 01:54:32: case.submit starting 
+ ---------------------------------------------------
+2021-10-24 01:54:39: case.submit success case.run:1149405.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:1149406.chadmin1.ib0.cheyenne.ucar.edu
+ ---------------------------------------------------
+2021-10-24 01:54:42: case.run starting 
+ ---------------------------------------------------
+2021-10-24 01:54:45: model execution starting 
+ ---------------------------------------------------
+2021-10-24 05:43:40: model execution success 
+ ---------------------------------------------------
+2021-10-24 05:43:40: case.run success 
+ ---------------------------------------------------
+2021-10-24 05:44:03: st_archive starting 
+ ---------------------------------------------------
+2021-10-24 05:44:12: st_archive success 
+ ---------------------------------------------------

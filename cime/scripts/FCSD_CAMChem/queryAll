@@ -1,0 +1,461 @@
+
+Results in group build_component_cam
+	CAM_CONFIG_OPTS: -phys cam6 -chem trop_strat_mam4_vbs -age_of_air_trcs -offline_dyn -nlev 56
+	CAM_CPPDEFS:     -DPLON=144 -DPLAT=96 -DPLEV=56 -DPCNST=199 -DPCOLS=16 -DPSUBCOLS=1 -DN_RAD_CNST=30 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DOFFLINE_DYN -DSPMD -DMODAL_AERO -DMODAL_AERO_4MODE  -DCLUBB_SGS -DCLUBB_CAM -DNO_LAPACK_ISNAN -DCLUBB_REAL_TYPE=dp -DHAVE_VPRINTF -DHAVE_TIMES -DHAVE_GETTIMEOFDAY -DHAVE_COMM_F2C -DHAVE_NANOTIME -DBIT64 -DHAVE_SLASHPROC -DMODEL_ -DMODEL_CESM -DHEMCO_CESM -DUSE_REAL8
+	CAM_DYCORE: fv
+	CLM_CPPDEFS: UNSET
+
+Results in group build_component_cice
+	CICE_AUTO_DECOMP: TRUE
+	CICE_BLCKX: 4
+	CICE_BLCKY: 4
+	CICE_CONFIG_OPTS:  -phys cice5 
+	CICE_CPPDEFS:  -DCESMCOUPLED -Dncdf -DNUMIN=11 -DNUMAX=99  -DNICECAT=1 -DNXGLOB=144 -DNYGLOB=96 -DNTRAERO=0 -DNTRISO=0 -DNBGCLYR=0 -DNICELYR=8 -DNSNWLYR=3 -DTRAGE=1 -DTRFY=1 -DTRLVL=1 -DTRPND=1 -DTRBRI=0 -DTRBGCS=0 -DBLCKX=4 -DBLCKY=4 -DMXBLCKS=3
+	CICE_DECOMPSETTING: square-ice
+	CICE_DECOMPTYPE: roundrobin
+	CICE_MODE: prescribed
+	CICE_MXBLCKS: 3
+
+Results in group build_component_clm
+	CLM_CONFIG_OPTS: -phys clm5_0
+	CLM_USE_PETSC: FALSE
+
+Results in group build_component_mosart
+	MOSART_FLOOD_MODE: NULL
+	MOSART_MODE: ACTIVE
+
+Results in group build_def
+	CALENDAR: GREGORIAN
+	CIME_OUTPUT_ROOT: /glade/scratch/fritzt
+	COMP_INTERFACE: mct
+	DEBUG: FALSE
+	EXEROOT: /glade/scratch/fritzt/FCSD_CAMChem/bld
+	FORCE_BUILD_SMP: FALSE
+	GMAKE: gmake
+	GMAKE_J: 8
+	SMP_PRESENT: FALSE
+	USE_ALBANY: FALSE
+	USE_ESMF_LIB: TRUE
+	USE_MOAB: FALSE
+	USE_PETSC: FALSE
+	USE_TRILINOS: FALSE
+
+Results in group build_derived
+	INCROOT: /glade/scratch/fritzt/FCSD_CAMChem/bld/lib/include
+	LIBROOT: /glade/scratch/fritzt/FCSD_CAMChem/bld/lib
+	OBJROOT: /glade/scratch/fritzt/FCSD_CAMChem/bld
+	PERL5LIB: 
+	SHAREDLIBROOT: /glade/scratch/fritzt/FCSD_CAMChem/bld
+
+Results in group build_grid
+	ATM_GRID: 1.9x2.5
+	ATM_NX: 144
+	ATM_NY: 96
+	GLC_GRID: null
+	GLC_NX: 0
+	GLC_NY: 0
+	GRID: a%1.9x2.5_l%1.9x2.5_oi%1.9x2.5_r%r05_g%null_w%null_m%gx1v7
+	ICE_GRID: 1.9x2.5
+	ICE_NCAT: 1
+	ICE_NX: 144
+	ICE_NY: 96
+	LND_GRID: 1.9x2.5
+	LND_NX: 144
+	LND_NY: 96
+	MASK_GRID: gx1v7
+	OCN_GRID: 1.9x2.5
+	OCN_NX: 144
+	OCN_NY: 96
+	ROF_GRID: r05
+	ROF_NX: 720
+	ROF_NY: 360
+	WAV_GRID: null
+	WAV_NX: 0
+	WAV_NY: 0
+
+Results in group build_macros
+	COMPILER: intel
+	MPILIB: mpt
+	OS: LINUX
+	PIO_CONFIG_OPTS: 
+	PIO_VERSION: 1
+
+Results in group build_status
+	BUILD_COMPLETE: TRUE
+	BUILD_STATUS: 0
+	NINST_BUILD: 0
+	NINST_VALUE: c1a1l1i1o1r1g1w1e1
+	SMP_BUILD: c0a0l0i0o0r0g0w0e0
+	SMP_VALUE: c0a0l0i0o0r0g0w0e0
+
+Results in group case.run
+	BATCH_COMMAND_FLAGS: 
+	CHARGE_ACCOUNT: umit0034
+	JOB_QUEUE: regular
+	JOB_WALLCLOCK_TIME: 12:00:00
+	PROJECT: umit0034
+	PROJECT_REQUIRED: TRUE
+	USER_REQUESTED_QUEUE: regular
+	USER_REQUESTED_WALLTIME: 12:00:00
+	prereq: True and not False
+	template: template.case.run
+
+Results in group case.st_archive
+	BATCH_COMMAND_FLAGS: 
+	CHARGE_ACCOUNT: umit0034
+	JOB_QUEUE: regular
+	JOB_WALLCLOCK_TIME: 0:20:00
+	PROJECT: umit0034
+	PROJECT_REQUIRED: TRUE
+	USER_REQUESTED_QUEUE: regular
+	USER_REQUESTED_WALLTIME: 
+	dependency: case.run or case.test
+	prereq: False
+	task_count: 1
+	template: template.st_archive
+	walltime: 0:20:00
+
+Results in group case_comp
+	COMP_ATM: cam
+	COMP_CLASSES: CPL,ATM,LND,ICE,OCN,ROF,GLC,WAV,ESP
+	COMP_CPL: cpl
+	COMP_ESP: sesp
+	COMP_GLC: sglc
+	COMP_ICE: cice
+	COMP_LND: clm
+	COMP_OCN: docn
+	COMP_ROF: mosart
+	COMP_WAV: swav
+	ICE_PE_CHANGE_REQUIRES_REBUILD: TRUE
+
+Results in group case_comps
+	COMP_ROOT_DIR_ATM: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam/
+	COMP_ROOT_DIR_CPL: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/drivers/mct
+	COMP_ROOT_DIR_ESP: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/sesp
+	COMP_ROOT_DIR_GLC: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/sglc
+	COMP_ROOT_DIR_ICE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cice/
+	COMP_ROOT_DIR_LND: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/clm/
+	COMP_ROOT_DIR_OCN: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/data_comps/docn
+	COMP_ROOT_DIR_ROF: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/mosart/
+	COMP_ROOT_DIR_WAV: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/swav
+
+Results in group case_def
+	CASE: FCSD_CAMChem
+	CASEROOT: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_CAMChem
+	CIMEROOT: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime
+	FILES_CONFIG_SPEC: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config_files.xml
+	MACH: cheyenne
+	MACHDIR: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/machines
+	SRCROOT: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1
+	SUPPORTED_BY: cseg
+
+Results in group case_der
+	CASEBUILD: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_CAMChem/Buildconf
+	CASEFILE_HEADERS: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/config_headers.xml
+	CASETOOLS: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/FCSD_CAMChem/Tools
+	MODEL: cesm
+	MODEL_VERSION: cesm2.1.1-exp17
+	SCRIPTSROOT: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts
+	UTILROOT: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/scripts/Tools
+
+Results in group case_desc
+	REALUSER: fritzt
+	USER: fritzt
+
+Results in group case_last
+	ARCHIVE_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/config_archive.xml
+	BATCH_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/machines/config_batch.xml
+	COMPILERS_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/machines/config_compilers.xml
+	COMPSET: HIST_CAM60%CCTS%SDYN_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV
+	COMPSETS_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/config_compsets.xml
+	CONFIG_ATM_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/config_component.xml
+	CONFIG_CPL_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/drivers/mct/cime_config/config_component.xml
+	CONFIG_CPL_FILE_MODEL_SPECIFIC: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/drivers/mct/cime_config/config_component_cesm.xml
+	CONFIG_ESP_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/sesp/cime_config/config_component.xml
+	CONFIG_GLC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/sglc/cime_config/config_component.xml
+	CONFIG_ICE_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cice//cime_config/config_component.xml
+	CONFIG_LND_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/clm//cime_config/config_component.xml
+	CONFIG_OCN_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/data_comps/docn/cime_config/config_component.xml
+	CONFIG_ROF_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/mosart//cime_config/config_component.xml
+	CONFIG_WAV_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/src/components/stub_comps/swav/cime_config/config_component.xml
+	GRIDS_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/config_grids.xml
+	INPUTDATA_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/config_inputdata.xml
+	MACHINES_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/machines/config_machines.xml
+	NAMELIST_DEFINITION_FILE: unset
+	PES_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/config_pes.xml
+	PIO_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/cime/config/cesm/machines/config_pio.xml
+	TESTS_MODS_DIR: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/testdefs/testmods_dirs
+	TESTS_SPEC_FILE: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/testdefs/testlist_cam.xml
+	USER_MODS_DIR: /glade/u/home/fritzt/CESM-GC_13.0.0/cesm_standard/cesm.2.1.1/components/cam//cime_config/usermods_dirs
+
+Results in group config_batch
+	BATCH_SYSTEM: pbs
+
+Results in group external_tools
+	DATA_ASSIMILATION: ['CPL:FALSE', 'ATM:FALSE', 'LND:FALSE', 'ICE:FALSE', 'OCN:FALSE', 'ROF:FALSE', 'GLC:FALSE', 'WAV:FALSE']
+	DATA_ASSIMILATION_CYCLES: 1
+	DATA_ASSIMILATION_SCRIPT: 
+	POSTRUN_SCRIPT: 
+	PRERUN_SCRIPT: 
+
+Results in group mach_pes
+	ALLOCATE_SPARE_NODES: FALSE
+	FORCE_SPARE_NODES: -999
+	MULTI_DRIVER: FALSE
+	NINST: ['ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'ESP:1']
+	NINST_LAYOUT: ['ATM:concurrent', 'LND:concurrent', 'ICE:concurrent', 'OCN:concurrent', 'ROF:concurrent', 'GLC:concurrent', 'WAV:concurrent', 'ESP:concurrent']
+	NTASKS: ['CPL:288', 'ATM:288', 'LND:288', 'ICE:288', 'OCN:288', 'ROF:288', 'GLC:288', 'WAV:288', 'ESP:1']
+	NTASKS_PER_INST: ['ATM:288', 'LND:288', 'ICE:288', 'OCN:288', 'ROF:288', 'GLC:288', 'WAV:288', 'ESP:1']
+	NTHRDS: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'ESP:1']
+	PSTRID: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'ESP:1']
+	ROOTPE: ['CPL:0', 'ATM:0', 'LND:0', 'ICE:0', 'OCN:0', 'ROF:0', 'GLC:0', 'WAV:0', 'ESP:0']
+
+Results in group mach_pes_last
+	COSTPES_PER_NODE: 36
+	COST_PES: 288
+	MAX_MPITASKS_PER_NODE: 36
+	MAX_TASKS_PER_NODE: 36
+	TOTALPES: 288
+
+Results in group run_begin_stop_restart
+	BARRIER_DATE: -999
+	BARRIER_N: 1
+	BARRIER_OPTION: never
+	CONTINUE_RUN: FALSE
+	ESP_RUN_ON_PAUSE: FALSE
+	GET_REFCASE: FALSE
+	JOB_IDS: 
+	PAUSE_ACTIVE: ['CPL:FALSE', 'ATM:FALSE', 'LND:FALSE', 'ICE:FALSE', 'OCN:FALSE', 'ROF:FALSE', 'GLC:FALSE', 'WAV:FALSE']
+	PAUSE_N: 0
+	PAUSE_OPTION: never
+	REST_DATE: -999
+	REST_N: 1
+	REST_OPTION: nmonths
+	RESUBMIT: 23
+	RESUBMIT_SETS_CONTINUE_RUN: TRUE
+	RUN_REFCASE: case.std
+	RUN_REFDATE: 0001-01-01
+	RUN_REFDIR: cesm2_init
+	RUN_REFTOD: 00000
+	RUN_STARTDATE: 2015-01-01
+	RUN_TYPE: startup
+	START_TOD: 0
+	STOP_DATE: -999
+	STOP_N: 1
+	STOP_OPTION: nmonths
+
+Results in group run_budgets
+	BUDGETS: FALSE
+
+Results in group run_co2
+	CCSM_CO2_PPMV: 284.7
+
+Results in group run_component_cam
+	CAM_NAMELIST_OPTS: 
+	CAM_NML_USE_CASE: sd_trop_strat_vbs_cam6
+	CAM_USER_MODS: 
+
+Results in group run_component_cam_sstice
+	SSTICE_GRID_FILENAME: /glade/p/cesmdata//inputdata/atm/cam/ocnfrac/domain.camocn.1.9x2.5_gx1v6_090403.nc 
+	SSTICE_YEAR_ALIGN: 1850
+	SSTICE_YEAR_END: 2016
+	SSTICE_YEAR_START: 1850
+
+Results in group run_component_cice
+	CICE_NAMELIST_OPTS: 
+	CICE_USER_MODS: 
+
+Results in group run_component_clm
+	CLM_ACCELERATED_SPINUP: off
+	CLM_BLDNML_OPTS: -bgc sp
+	CLM_CO2_TYPE: diagnostic
+	CLM_FORCE_COLDSTART: off
+	CLM_NAMELIST_OPTS: 
+	CLM_NML_USE_CASE: 20thC_transient
+	CLM_USER_MODS: 
+	CLM_USRDAT_NAME: UNSET
+	LND_TUNING_MODE: clm5_0_cam6.0
+
+Results in group run_component_cpl
+	CPL_ALBAV: FALSE
+	CPL_EPBAL: off
+	CPL_USER_MODS: 
+
+Results in group run_component_docn
+	DOCN_AQP_FILENAME: UNSET
+	DOCN_MODE: prescribed
+	DOCN_SOM_FILENAME: UNSET
+	SSTICE_DATA_FILENAME: /glade/p/cesmdata//inputdata/atm/cam/sst/sst_HadOIBl_bc_1.9x2.5_1850_2017_c180507.nc
+	SSTICE_STREAM: CAMDATA
+
+Results in group run_component_mosart
+	MOSART_SIMYR: 1850
+
+Results in group run_coupling
+	ATM_NCPL: 48
+	CCSM_BGC: CO2A
+	CPL_I2O_PER_CAT: FALSE
+	CPL_SEQ_OPTION: CESM1_MOD_TIGHT
+	GLC_AVG_PERIOD: yearly
+	GLC_NCPL: 48
+	ICE_NCPL: 48
+	LND_NCPL: 48
+	NCPL_BASE_PERIOD: day
+	OCN_NCPL: 48
+	ROF_NCPL: 8
+	WAV_NCPL: 48
+
+Results in group run_data_archive
+	DOUT_S: FALSE
+	DOUT_S_SAVE_INTERIM_RESTART_FILES: FALSE
+	SYSLOG_N: 900
+
+Results in group run_desc
+	CASESTR: UNSET
+	RUNDIR: /glade/scratch/fritzt/FCSD_CAMChem/run
+
+Results in group run_din
+	DIN_LOC_ROOT: /glade/p/cesmdata//inputdata
+	DIN_LOC_ROOT_CLMFORC: /glade/p/cgd/tss/CTSM_datm_forcing_data
+	MPIRUN_RETRY_COUNT: 10
+	MPIRUN_RETRY_REGEX: MPT: Launcher network accept (MPI_LAUNCH_TIMEOUT) timed out
+	NODENAME_REGEX: .*.?cheyenne\d?.ucar.edu
+	NODE_FAIL_REGEX: 
+	PROXY: UNSET
+	TEST: FALSE
+
+Results in group run_domain
+	ATM2LND_FMAPNAME: idmap
+	ATM2LND_FMAPTYPE: X
+	ATM2LND_SMAPNAME: idmap
+	ATM2LND_SMAPTYPE: X
+	ATM2OCN_FMAPNAME: idmap
+	ATM2OCN_FMAPTYPE: X
+	ATM2OCN_SMAPNAME: idmap
+	ATM2OCN_SMAPTYPE: X
+	ATM2OCN_VMAPNAME: idmap
+	ATM2OCN_VMAPTYPE: X
+	ATM2WAV_SMAPNAME: idmap
+	ATM2WAV_SMAPTYPE: Y
+	ATM_DOMAIN_FILE: domain.lnd.fv1.9x2.5_gx1v7.181205.nc
+	ATM_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+	EPS_AAREA: 9e-07
+	EPS_AGRID: 1e-12
+	EPS_AMASK: 1e-13
+	EPS_FRAC: 1.0e-02
+	EPS_OAREA: 0.1
+	EPS_OGRID: 0.01
+	EPS_OMASK: 1e-06
+	GLC2ICE_RMAPNAME: idmap_ignore
+	GLC2ICE_RMAPTYPE: Y
+	GLC2LND_FMAPNAME: idmap
+	GLC2LND_FMAPTYPE: Y
+	GLC2LND_SMAPNAME: idmap
+	GLC2LND_SMAPTYPE: Y
+	GLC2OCN_ICE_RMAPNAME: idmap_ignore
+	GLC2OCN_ICE_RMAPTYPE: Y
+	GLC2OCN_LIQ_RMAPNAME: idmap_ignore
+	GLC2OCN_LIQ_RMAPTYPE: Y
+	GLC_DOMAIN_FILE: UNSET
+	GLC_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+	ICE2WAV_SMAPNAME: idmap
+	ICE2WAV_SMAPTYPE: Y
+	ICE_DOMAIN_FILE: domain.ocn.fv1.9x2.5_gx1v7.181205.nc
+	ICE_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+	LND2ATM_FMAPNAME: idmap
+	LND2ATM_FMAPTYPE: Y
+	LND2ATM_SMAPNAME: idmap
+	LND2ATM_SMAPTYPE: Y
+	LND2GLC_FMAPNAME: idmap
+	LND2GLC_FMAPTYPE: X
+	LND2GLC_SMAPNAME: idmap
+	LND2GLC_SMAPTYPE: X
+	LND2ROF_FMAPNAME: lnd/clm2/mappingdata/maps/1.9x2.5/map_1.9x2.5_nomask_to_0.5x0.5_nomask_aave_da_c120522.nc
+	LND2ROF_FMAPTYPE: X
+	LND_DOMAIN_FILE: domain.lnd.fv1.9x2.5_gx1v7.181205.nc
+	LND_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+	OCN2ATM_FMAPNAME: idmap
+	OCN2ATM_FMAPTYPE: Y
+	OCN2ATM_SMAPNAME: idmap
+	OCN2ATM_SMAPTYPE: Y
+	OCN2WAV_SMAPNAME: idmap
+	OCN2WAV_SMAPTYPE: Y
+	OCN_DOMAIN_FILE: domain.ocn.fv1.9x2.5_gx1v7.181205.nc
+	OCN_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+	PTS_LAT: -999.99
+	PTS_LON: -999.99
+	PTS_MODE: FALSE
+	ROF2LND_FMAPNAME: lnd/clm2/mappingdata/maps/1.9x2.5/map_0.5x0.5_nomask_to_1.9x2.5_nomask_aave_da_c120709.nc
+	ROF2LND_FMAPTYPE: Y
+	ROF2OCN_FMAPNAME: idmap_ignore
+	ROF2OCN_FMAPTYPE: Y
+	ROF2OCN_ICE_RMAPNAME: idmap
+	ROF2OCN_ICE_RMAPTYPE: Y
+	ROF2OCN_LIQ_RMAPNAME: idmap
+	ROF2OCN_LIQ_RMAPTYPE: Y
+	ROF_DOMAIN_FILE: UNSET
+	ROF_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+	VECT_MAP: cart3d
+	WAV2OCN_SMAPNAME: idmap
+	WAV2OCN_SMAPTYPE: X
+	WAV_DOMAIN_FILE: UNSET
+	WAV_DOMAIN_PATH: /glade/p/cesmdata//inputdata/share/domains
+
+Results in group run_dout
+	DOUT_S_ROOT: /glade/scratch/fritzt/archive/FCSD_CAMChem
+
+Results in group run_drv_history
+	AVGHIST_DATE: -999
+	AVGHIST_N: -999
+	AVGHIST_OPTION: never
+	HIST_DATE: -999
+	HIST_N: -999
+	HIST_OPTION: never
+
+Results in group run_flags
+	BFBFLAG: FALSE
+	CHECK_TIMING: TRUE
+	COMP_RUN_BARRIERS: FALSE
+	CPL_DECOMP: 0
+	DRV_THREADING: FALSE
+	ESMF_LOGFILE_KIND: ESMF_LOGKIND_SINGLE
+	FLDS_WISO: FALSE
+	INFO_DBUG: 1
+	PROFILE_PAPI_ENABLE: FALSE
+	SAVE_TIMING: FALSE
+	TIMER_DETAIL: 2
+	TIMER_LEVEL: 5
+	TPROF_TOTAL: 0
+
+Results in group run_glc
+	GLC_NEC: 10
+	GLC_TWO_WAY_COUPLING: FALSE
+
+Results in group run_metadata
+	MODEL_DOI_URL: https://doi.org/10.5065/D67H1H0V
+
+Results in group run_mpi
+	MPI_RUN_COMMAND: UNSET
+
+Results in group run_physics
+	TFREEZE_SALTWATER_OPTION: mushy
+
+Results in group run_pio
+	PIO_ASYNC_INTERFACE: FALSE
+	PIO_BLOCKSIZE: -1
+	PIO_BUFFER_SIZE_LIMIT: -1
+	PIO_DEBUG_LEVEL: 0
+	PIO_NETCDF_FORMAT: ['CPL:64bit_offset', 'ATM:64bit_offset', 'LND:64bit_offset', 'ICE:64bit_offset', 'OCN:64bit_offset', 'ROF:64bit_offset', 'GLC:64bit_offset', 'WAV:64bit_offset', 'ESP:64bit_offset']
+	PIO_NUMTASKS: ['CPL:-99', 'ATM:-99', 'LND:-99', 'ICE:-99', 'OCN:-99', 'ROF:-99', 'GLC:-99', 'WAV:-99', 'ESP:-99']
+	PIO_REARRANGER: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'ESP:1']
+	PIO_REARR_COMM_ENABLE_HS_COMP2IO: TRUE
+	PIO_REARR_COMM_ENABLE_HS_IO2COMP: FALSE
+	PIO_REARR_COMM_ENABLE_ISEND_COMP2IO: FALSE
+	PIO_REARR_COMM_ENABLE_ISEND_IO2COMP: TRUE
+	PIO_REARR_COMM_FCD: 2denable
+	PIO_REARR_COMM_MAX_PEND_REQ_COMP2IO: 0
+	PIO_REARR_COMM_MAX_PEND_REQ_IO2COMP: 64
+	PIO_REARR_COMM_TYPE: p2p
+	PIO_ROOT: ['CPL:1', 'ATM:1', 'LND:1', 'ICE:1', 'OCN:1', 'ROF:1', 'GLC:1', 'WAV:1', 'ESP:1']
+	PIO_STRIDE: ['CPL:36', 'ATM:36', 'LND:36', 'ICE:36', 'OCN:36', 'ROF:36', 'GLC:36', 'WAV:36', 'ESP:36']
+	PIO_TYPENAME: ['CPL:pnetcdf', 'ATM:pnetcdf', 'LND:pnetcdf', 'ICE:pnetcdf', 'OCN:pnetcdf', 'ROF:pnetcdf', 'GLC:pnetcdf', 'WAV:pnetcdf', 'ESP:pnetcdf']
